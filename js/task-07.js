@@ -8,10 +8,11 @@
 
 const inputRef = document.querySelector('#font-size-control');
 
-inputRef.addEventListener('input', onHandinput);
+// inputRef.addEventListener('input', onHandinput);
+inputRef.addEventListener('input', () => {
 
-function onHandinput(event) {
+// function onHandinput(event) {
   let spanRef = document.querySelector('#text');
   spanRef.style.fontSize = event.currentTarget.value + 'px';
 
-}
+});

@@ -10,5 +10,5 @@ const nameInputRef = document.getElementById('name-input');
 const nameOutputRef = document.getElementById('name-output');
 
 nameInputRef.addEventListener('input', () => {
-  nameOutputRef.textContent = nameInputRef.value || 'Anonymous';
+  nameOutputRef.textContent = nameInputRef.value.trim() || 'Anonymous';
 });
